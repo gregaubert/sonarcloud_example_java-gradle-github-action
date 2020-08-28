@@ -1,5 +1,5 @@
 plugins {
-    id "org.sonarqube" version "2.7.1"
+  id "org.sonarqube" version "3.0"
 }
 
 apply plugin: 'java'
@@ -14,8 +14,9 @@ dependencies {
 }
 
 sonarqube {
-    properties {
-        property "sonar.projectName", "Java Gradle-based project analyzed on SonarCloud using Travis"
-        property "sonar.projectKey", "com.sonarqube.examples.java-gradle-travis-project"
-    }
+  properties {
+    property "sonar.projectKey", "gregaubert_sonarcloud_example_java-gradle-github-action"
+    property "sonar.organization", "paid-org"
+    property "sonar.host.url", "https://greg.eu.ngrok.io"
+  }
 }
