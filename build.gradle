@@ -16,7 +16,7 @@ dependencies {
 sonarqube {
   properties {
     property "sonar.projectKey", "gregaubert_sonarcloud_example_java-gradle-github-action"
-    property "sonar.organization", "paid-org"
-    property "sonar.host.url", "https://greg.eu.ngrok.io"
+    property "sonar.organization", "gregaubert"
+    property "sonar.host.url", "https://squad-3-core.sc-dev.io"
   }
 }
